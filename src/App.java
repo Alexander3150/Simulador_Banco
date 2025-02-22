@@ -7,22 +7,22 @@ public class App {
             opcion = mostrarMenu(); 
             switch (opcion) {
                 case 1:
-                    System.out.println("Agregando cliente...");
+                    System.out.println("  Agregando cliente...");
                     cola_clientes.agregarCliente();
                     break;
                 case 2:
-                    System.out.println("Atendiendo cliente...");
+                    System.out.println("  Atendiendo cliente...");
                     cola_clientes.atenderCliente();
                     break;
                 case 3:
-                    System.out.println("Mostrando cola de espera...");
+                    System.out.println("  Mostrando cola de espera...");
                     cola_clientes.mostrarCola();
                     break;
                 case 4:
-                    System.out.println("Saliendo del sistema...");
+                    System.out.println("  Saliendo del sistema...");
                     break;
                 default:
-                    System.out.println("Opción inválida. Intente nuevamente.");
+                    System.out.println("  Opción inválida. Intente nuevamente.");
             }
         } while (opcion != 4);
     }
