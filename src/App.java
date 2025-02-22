@@ -12,11 +12,11 @@ public class App {
                     break;
                 case 2:
                     System.out.println("Atendiendo cliente...");
-                
+                    cola_clientes.atenderCliente();
                     break;
                 case 3:
                     System.out.println("Mostrando cola de espera...");
-                    cola_clientes.mostrarCantidadClientes();
+                    cola_clientes.mostrarCola();
                     break;
                 case 4:
                     System.out.println("Saliendo del sistema...");
@@ -30,6 +30,7 @@ public class App {
     
     public static int mostrarMenu() {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("---- Bienvanido -----");
         System.out.println("\n--- Sistema de Atención en Banco ---");
         System.out.println("1. Agregar cliente");
         System.out.println("2. Atender cliente");
