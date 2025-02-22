@@ -8,7 +8,7 @@ public class App {
             switch (opcion) {
                 case 1:
                     System.out.println("Agregando cliente...");
-                    
+                    cola_clientes.agregarCliente();
                     break;
                 case 2:
                     System.out.println("Atendiendo cliente...");
@@ -16,7 +16,7 @@ public class App {
                     break;
                 case 3:
                     System.out.println("Mostrando cola de espera...");
-                    
+                    cola_clientes.mostrarCantidadClientes();
                     break;
                 case 4:
                     System.out.println("Saliendo del sistema...");
@@ -27,7 +27,7 @@ public class App {
         } while (opcion != 4);
     }
 
-    // ✅ Ahora devuelve un int con la opción elegida
+    
     public static int mostrarMenu() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n--- Sistema de Atención en Banco ---");
